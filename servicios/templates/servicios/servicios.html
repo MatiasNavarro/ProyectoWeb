@@ -1,0 +1,19 @@
+{% extends "servicios/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+   <!-- Heading -->
+    {% for servicio in servicios %}
+   <div><p>
+       <h2 style="color: aliceblue;">{{servicio.titulo}}</h2>
+       <p style="color: aliceblue;">{{servicio.contenido}}</p>
+       <p> <img src="{{servicio.imagen.url}}" width="50%"></p>
+   </p></div>
+    {% endfor %}
+    <!-- Message -->
+
+{% endblock %}
+
+  
